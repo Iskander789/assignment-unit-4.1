@@ -22,9 +22,10 @@ console.log(helloName('Boedicca'));
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
+function addNumbers(firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
 }
+console.log(addNumbers(5, 3));
 
 
 // 4. Function to multiply three numbers & return the result
