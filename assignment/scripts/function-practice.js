@@ -29,10 +29,10 @@ console.log(addNumbers(5, 3));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  return firstNumber * secondNumber * thirdNumber
 }
-
+console.log(multiplyThree(2, 3, 4));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
