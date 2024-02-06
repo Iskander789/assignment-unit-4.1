@@ -65,8 +65,27 @@ console.log(getLast([1, 2, 3]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false;
 }
+
+console.log(find(3, [1, 2, 3, 4]));
+console.log(find(5, [1, 2, 3, 4]));
+console.log(find(1, [1, 2, 3, 4]));
+console.log(find(4, [1, 2, 3, 4]));
+console.log(find(0, [1, 2, 3, 4]));
+console.log(find(3, []));
+console.log(find(5, [5]));
+console.log(find(0, [0]));
+console.log(find(undefined, [1, 2, 3]));
+console.log(find(null, [1, 2, null]));
+console.log(find("hello", ["hello", "world"]));
+
+
 
 // ----------------------
 // Stretch Goals
